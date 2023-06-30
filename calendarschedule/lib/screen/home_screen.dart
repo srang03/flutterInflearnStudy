@@ -1,4 +1,4 @@
-import 'package:calendarschedule/component/new_schedule_bottom_sheet.dart';
+import 'package:calendarschedule/component/schedule_bottom_sheet.dart';
 import 'package:calendarschedule/component/schedule_card.dart';
 import 'package:calendarschedule/component/today_banner.dart';
 import 'package:flutter/material.dart';

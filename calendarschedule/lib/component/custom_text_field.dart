@@ -28,7 +28,15 @@ class CustomTextField extends StatelessWidget {
     final textFieldColor = Colors.grey[300];
     final cursorColor = Colors.grey[500];
 
-    return TextField(
+    return TextFormField(
+      // Error가 없으면 null, Error가 있으면 오류 메시지를 리턴
+      validator: (String? value){
+       if(value == null || value.isEmpty){
+         return '값을 입력해주세요.';
+       }
+
+       return null;
+      },
       expands: !isTime,
       keyboardType: isTime ? TextInputType.datetime : TextInputType.multiline, // 모바일 앱 키보드 타입
       inputFormatters: isTime ? [FilteringTextInputFormatter.digitsOnly] : [], // 입력 가능한 데이터 포맷

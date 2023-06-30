@@ -1,6 +1,6 @@
 import 'package:drift/drift.dart';
 
-class Shedules extends Table {
+class Schedules extends Table {
   // PRIMARY KEY
 
   IntColumn get id => integer().autoIncrement()();
